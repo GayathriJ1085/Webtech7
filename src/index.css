@@ -1,0 +1,89 @@
+:root{
+  --gold-1: #d4af37;
+  --gold-2: #ffdd66;
+  --silver-1: #c0c0c0;
+  --silver-2: #e6e6e6;
+  --bg-dark: #0b0b0c;
+  --text-dark: #111;
+}
+
+body{
+  background: linear-gradient(180deg,#070708 0%, #121214 100%);
+  color: #fff;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  padding: 1.25rem;
+}
+
+/* Header */
+.app-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:1rem;
+  margin-bottom:1rem;
+}
+.brand {
+  background: linear-gradient(90deg, var(--gold-1), var(--silver-1));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight:700;
+  font-size:1.5rem;
+  letter-spacing:0.4px;
+}
+
+/* Card theme */
+.card-theme{
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+  border-radius: 10px;
+}
+
+/* Buttons */
+.btn-gold{
+  background: linear-gradient(90deg, var(--gold-1), var(--gold-2));
+  color: var(--text-dark);
+  border: none;
+}
+.btn-silver{
+  background: linear-gradient(90deg, var(--silver-1), var(--silver-2));
+  color: var(--text-dark);
+  border: none;
+}
+
+/* Inputs */
+.form-control-theme{
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  color: white;
+}
+
+/* Helper text */
+.small-muted{
+  color: #cfcfcf;
+  font-size: 0.9rem;
+}
+
+/* Spacing */
+.question-box{
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* result */
+.result{
+  background: linear-gradient(90deg, rgba(212,175,55,0.12), rgba(192,192,192,0.06));
+  padding: 0.6rem;
+  border-radius: 6px;
+  color: #fff;
+  margin-top:0.6rem;
+}
+
+/* list-group adjustments */
+.list-group-item.card-theme{
+  background: transparent;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
